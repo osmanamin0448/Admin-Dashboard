@@ -19,7 +19,7 @@ body{
 	background-color: dodgerblue;
 	grid-row: 1/ 4;
 }
-.container .info-section{
+.container .main-section{
 	background-color: lightgray;
 	grid-row: 2 / 4;
 }
