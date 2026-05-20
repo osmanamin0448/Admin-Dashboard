@@ -5,18 +5,96 @@
 }
 body{
 	height: 100vh;
+	overflow: hidden;
 }
 
 .container{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 1fr 5fr;
-	height: 100vh;
 }
 .container .header{
+	
+}
+.search-bar{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 50px;
+}
+.header .search-bar-left,
+.search-bar-right{
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	align-items: center;
+	padding:20px;
+	padding-bottom: 0;
+	gap: 20px;
 }
 
+.search-bar-left button{
+	border: none;
+	background-color: transparent;
+}
+.search-bar-left input{
+	border-radius: 30px;
+	background-color: lightgray;
+	height: 40px;
+	border: 1px;
+}
+.search-bar-right{
+	grid-template-columns: 1fr 1fr 2fr;
+}
 
+.search-bar-right button{
+	width: 50px;
+	border: none;
+	background-color: transparent;
+}
+.search-bar-right .mini-logo{
+	height: 50px;
+	width: 50px;
+	border-radius: 50px
+}
+.search-bar-right .username{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: black
+}
+.info-section{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	padding: 20px;
+		align-items: center;
+
+}
+.info-section .user-info{
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	gap: 10px;
+	align-items: center;
+}
+.info-section .user-logo{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+}
+.info-section nav ul {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	list-style-type: none;
+	align-items: center;
+	gap: 20px;
+}
+.info-section nav li a{
+	padding:20px 40px;
+	background-color: dodgerblue;
+	color: white;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* SIDEBAR */
 .container .sidebar{
 	background-color: dodgerblue;
 	grid-row: 1/ 4;
