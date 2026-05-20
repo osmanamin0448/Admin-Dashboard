@@ -13,13 +13,58 @@ body{
 	grid-template-rows: 1fr 1fr 5fr;
 	height: 100vh;
 }
-.container > .header{
+.container .header{
 }
+
+
 .container .sidebar{
 	background-color: dodgerblue;
 	grid-row: 1/ 4;
+	padding: 20px;
 }
-.container .main-section{
+.sidebar .dash-icon-container{
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	gap: 20px;
+	align-items: center;
+	padding: 10px;
+	justify-content: center;
+}
+.dash-icon-container .dash-icon{
+	fill: white;
+}
+.dash-icon-container p{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: white;
+}
+
+.sidebar .top-nav ul,
+.sidebar .bottom-nav ul {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.sidebar .top-nav ul li,
+.sidebar .bottom-nav ul li{
+	display: grid;
+	grid-template-columns: 30px 1fr;
+	gap:20px;
+	align-items: center;
+	list-style-type: none;
+	padding: 10px;
+}
+
+nav ul svg{
+	fill: white;
+}
+nav ul li p{
+	font-weight: bold;
+	color: white;
+}
+
+
+.main-section{
 	background-color: lightgray;
 	grid-row: 2 / 4;
 }
